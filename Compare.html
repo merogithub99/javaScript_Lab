@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators Example</title>
+</head>
+<body>
+
+    <h1>Comparison Operators </h1>
+
+    <script>
+        // Numeric comparison
+        var x = 10;
+        var y = 5;
+
+        document.write("<p>" + x + " is equal to " + y + ": " + (x == y) + "</p>");
+        document.write("<p>" + x + " is not equal to " + y + ": " + (x != y) + "</p>");
+        document.write("<p>" + x + " is greater than " + y + ": " + (x > y) + "</p>");
+        document.write("<p>" + x + " is less than or equal to " + y + ": " + (x <= y) + "</p>");
+
+        // String comparison
+        var str1 = "apple";
+        var str2 = "banana";
+
+        document.write("<p>String Comparison:</p>");
+        document.write("<p>" + str1 + " is not equal to " + str2 + ": " + (str1 != str2) + "</p>");
+
+        // Mixed type comparison
+        var num = 10;
+        var str = "10";
+
+        document.write("<p>Mixed Type Comparison:</p>");
+        document.write("<p>" + num + " is equal to '" + str + "': " + (num == str) + "</p>");
+        document.write("<p>" + num + " is equal to '" + str + "' (strict comparison): " + (num === str) + "</p>");
+
+    </script>
+
+</body>
+</html>

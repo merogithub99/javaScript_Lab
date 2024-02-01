@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators Example</title>
+  </head>
+  <body>
+    <h1>Logical Operators Example</h1>
+
+    <script>
+      // Logical AND (&&)
+      var condition1 = true;
+      var condition2 = false;
+      document.write(
+        condition1 +
+          " && " +
+          condition2 +
+          ": " +
+          (condition1 && condition2) +
+          "<br>"
+      );
+
+      // Logical OR (||)
+      document.write(
+        condition1 +
+          " || " +
+          condition2 +
+          ": " +
+          (condition1 || condition2) +
+          "<br>"
+      );
+
+      // Logical NOT (!)
+      document.write("!" + condition1 + ": " + !condition1 + "<br>");
+      document.write("!" + condition2 + ": " + !condition2 + "<br>");
+
+      // Combining logical operators
+      var a = 5;
+      var b = 10;
+      var c = 3;
+
+      var aa = a > b && c < b;
+      document.write("Checking a > b && c < b---->");
+      document.write(aa);
+    </script>
+  </body>
+</html>

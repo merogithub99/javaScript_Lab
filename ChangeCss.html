@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change CSS Style</title>
+    <style>
+      #myElement {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myElement"></div>
+    <button onclick="changeStyle()">click</button>
+
+    <script>
+      function changeStyle() {
+        // Get the element by its ID
+        var myElement = document.getElementById("myElement");
+
+        // Change CSS styles
+        myElement.style.width = "150px";
+        myElement.style.height = "150px";
+        myElement.style.backgroundColor = "blue";
+        myElement.style.border = "2px solid black";
+      }
+    </script>
+  </body>
+</html>

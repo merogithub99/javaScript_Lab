@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic Operators Example</title>
+  </head>
+  <body>
+    <!-- Output area for displaying results -->
+    <div id="output"></div>
+
+    <script>
+      // Declare variables for demonstration
+      var a = 10;
+      var b = 5;
+
+      // Addition
+      var additionResult = a + b;
+      displayResult("Addition:", additionResult);
+
+      // Subtraction
+      var subtractionResult = a - b;
+      displayResult("Subtraction:", subtractionResult);
+
+      // Multiplication
+      var multiplicationResult = a * b;
+      displayResult("Multiplication:", multiplicationResult);
+
+      // Division
+      var divisionResult = a / b;
+      displayResult("Division:", divisionResult);
+
+      // Modulus (Remainder)
+      var modulusResult = a % b;
+      displayResult("Modulus (Remainder):", modulusResult);
+
+      // Increment
+      var incrementResult = ++a;
+      displayResult("Increment:", incrementResult);
+
+      // Decrement
+      var decrementResult = --b;
+      displayResult("Decrement:", decrementResult);
+
+      // Display results in the output area
+      function displayResult(operation, result) {
+        var outputDiv = document.getElementById("output");
+        outputDiv.innerHTML += "<p>" + operation + " " + result + "</p>";
+      }
+    </script>
+  </body>
+</html>

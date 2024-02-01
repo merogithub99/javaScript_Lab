@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change HTML Content</title>
+  </head>
+  <body>
+    <div id="contentDiv">
+      <p>Hello world.</p>
+    </div>
+    <button onclick="clickme()">click</button>
+
+    <script>
+      var contentDiv = document.getElementById("contentDiv");
+
+      function clickme() {
+        contentDiv.innerHTML = "<p> New content.</p>";
+      }
+    </script>
+  </body>
+</html>

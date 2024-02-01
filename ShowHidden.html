@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Hidden HTML Elements</title>
+    <style>
+      #myElement {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: none; /* Initially hiding the element */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myElement"></div>
+    <button onclick="showElement()">Show Element</button>
+    <button onclick="run()">Change</button>
+
+    <script>
+      function showElement() {
+        // Get the element by its ID
+        var myElement = document.getElementById("myElement");
+
+        // Show the element by setting its display property to an appropriate value
+        myElement.style.display = "block";
+      }
+      function run() {
+        document.write("Change the full page....");
+      }
+    </script>
+  </body>
+</html>
